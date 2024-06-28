@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import OptionsAPI from './components/OptionsAPI.vue';
+import CompositionAPI from './components/CompositionAPI.vue';
 import { ref } from 'vue'
 const count = ref(0)
 
@@ -10,7 +12,7 @@ function increment() {
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />  
 
     <div class="wrapper">
@@ -21,9 +23,12 @@ function increment() {
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
-  </header>
+  </header> -->
 
-  <RouterView />
+  <!-- <RouterView /> -->
+
+   <!-- <OptionsAPI/> -->
+   <CompositionAPI/>
 </template>
 
 <style scoped>
