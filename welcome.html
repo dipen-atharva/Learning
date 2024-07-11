@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welcome</title>
+</head>
+<body>
+  <h1 >Welcome <span id="welcome"></span> your are using <span id="os"></span> os</h1>
+  <p id="info"></p>
+
+  <script>
+    window.electron.name((data)=> document.getElementById("welcome").innerHTML =  data)
+    document.getElementById("os").innerHTML =  window.versions.os()
+    document.getElementById("info").innerHTML = `This app is using Chrome (v${window.versions.chrome()}), Node.js (v${window.versions.node()}), and Electron (v${window.versions.electron()})`;
+  </script>
+</body>
+</html>

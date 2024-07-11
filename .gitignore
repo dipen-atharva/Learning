@@ -1,0 +1,11 @@
+node_modules/
+out/
+
+
+//
+[Desktop Entry]
+Name=AC-Login
+Exec=/home/princek/Desktop/electron\ temp/your-electron-app %u
+Type=Application
+Terminal=false
+MimeType=x-scheme-handler/ac-login;

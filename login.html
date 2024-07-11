@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body style="margin: 0px;">
+    <div  style="display: flex; height: 100vh;  justify-content: space-around; align-items: center;">
+        <button style="background-color: blue; color: white; padding: 10px;" onclick="openPage()">Login</button>
+    </div>
+  
+    <script>
+        const { ipcRenderer } = window.electron;
+
+        function openPage(){
+            ipcRenderer.send('open');
+        }
+        window.electron.name((data)=>console.log(data))
+    </script>
+</body>
+</html>
