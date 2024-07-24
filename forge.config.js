@@ -4,35 +4,40 @@ const { FuseV1Options, FuseVersion } = require("@electron/fuses");
 module.exports = {
   packagerConfig: {
     asar: true,
-    productName: "ac-desktops",
     executableName: "login",
     protocols: [
       {
-        name: "elctronac",
-        schemes: ["electronac"],
+        name: "Electron Ac",
+        schemes: ["electron-ac"],
       },
     ],
+    extraResource: [
+      './bin/'
+    ]
   },
   rebuildConfig: {},
   makers: [
-    {
-      name: "@electron-forge/maker-squirrel",
-      config: {},
-    },
-    {
-      name: "@electron-forge/maker-zip",
-      platforms: ["darwin"],
-    },
+    // {
+    //   name: "@electron-forge/maker-squirrel",
+    //   config: {},
+    // },
+    // {
+    //   name: "@electron-forge/maker-zip",
+    //   platforms: ["darwin"],
+    // },
     {
       name: "@electron-forge/maker-deb",
       config: {
-        mimeType: ["x-scheme-handler/electron-fiddle"],
+        mimeType: ["x-scheme-handler/electron-ac"],
+        // scripts: {
+        //   postinst: './bin/postinstall'
+        // }
       },
     },
-    {
-      name: "@electron-forge/maker-rpm",
-      config: {},
-    },
+    // {
+    //   name: "@electron-forge/maker-rpm",
+    //   config: {},
+    // },
   ],
   plugins: [
     {

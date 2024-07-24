@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>welcome</title>
 </head>
+
 <body>
-  <h1 >Welcome <span id="welcome"></span> your are using <span id="os"></span> os</h1>
+  <h1>Welcome <span id="welcome"></span> your are using <span id="os"></span> os</h1>
   <p id="info"></p>
+  <button style="background-color: blue; color: white; padding: 10px;" onclick="openPage()">Login</button>
+
 
   <script>
-    window.electron.name((data)=> document.getElementById("welcome").innerHTML =  data)
-    document.getElementById("os").innerHTML =  window.versions.os()
+    window.electron.name((data) => document.getElementById("welcome").innerHTML = data)
+    window.electron.os_info((data) => console.log(data))
+    window.electron.sys_info((data) => console.log(data))
+    document.getElementById("os").innerHTML = window.versions.os()
     document.getElementById("info").innerHTML = `This app is using Chrome (v${window.versions.chrome()}), Node.js (v${window.versions.node()}), and Electron (v${window.versions.electron()})`;
+    const { ipcRenderer } = window.electron;
+    function openPage() {
+      ipcRenderer.send('open');
+    }
+    window.electron.name((data) => console.log(data))
   </script>
 </body>
+
 </html>

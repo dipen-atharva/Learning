@@ -1,0 +1,51 @@
+const si = require('systeminformation');
+const axios = require('axios');
+
+async function fetchData() {
+  try {
+    let data = {};
+
+    data['get'] = await si.get({
+      cpu: '*',
+      osInfo: '*',
+      system: '*',
+      bios: '*',
+      baseboard: '*',
+      uuid: '*',
+      memLayout: '*',
+      diskLayout: '*',
+      wifiNetworks: '*',
+      fsSize: '*',
+      users: '*',
+      mem: '*',
+      battery: '*',
+      networkStats: '*',
+    });
+
+    // console.log(JSON.stringify(data.get));
+    const axiosConfig = {
+      method: 'post',
+      url: 'http://192.168.31.231:3000/device_api/devices/certify',
+      headers: {
+        Token: 'token',
+        'Content-Type': 'application/json',
+      },
+      data: {
+        "device": {
+          "name": data.get.system.model,
+          "device_type": 'laptop',
+          "serial_number": data.get.system.serial,
+          "json_data": data.get,
+        }
+      },
+    };
+    await axios(axiosConfig).then((res) => {
+      console.log('Device Registered', res)
+    })
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+fetchData()
+

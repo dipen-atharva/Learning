@@ -1,0 +1,247 @@
+{
+  "cpu": {
+    "manufacturer": "Intel",
+    "brand": "Core™ i5-7300U",
+    "vendor": "Intel",
+    "family": "6",
+    "model": "142",
+    "stepping": "9",
+    "revision": "",
+    "voltage": "",
+    "speed": 2.6,
+    "speedMin": 0.4,
+    "speedMax": 3.5,
+    "governor": "powersave",
+    "cores": 4,
+    "physicalCores": 2,
+    "performanceCores": 2,
+    "efficiencyCores": 0,
+    "processors": 1,
+    "socket": "",
+    "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities",
+    "virtualization": true,
+    "cache": {
+      "l1d": 65536,
+      "l1i": 65536,
+      "l2": 524288,
+      "l3": 3145728
+    }
+  },
+  "osInfo": {
+    "platform": "linux",
+    "distro": "Ubuntu",
+    "release": "22.04.4 LTS",
+    "codename": "jammy",
+    "kernel": "6.5.0-44-generic",
+    "arch": "x64",
+    "hostname": "dipen-motka",
+    "fqdn": "dipen-motka",
+    "codepage": "UTF-8",
+    "logofile": "ubuntu",
+    "serial": "163582dcf4454c27a72a49bfbb959340",
+    "build": "",
+    "servicepack": "",
+    "uefi": true
+  },
+  "system": {
+    "manufacturer": "Dell Inc.",
+    "model": "Latitude 7480",
+    "version": "Not Specified",
+    "serial": "HB5V7H2",
+    "uuid": "4c4c4544-0042-3510-8056-c8c04f374832",
+    "sku": "07A0",
+    "virtual": false
+  },
+  "bios": {
+    "vendor": "Dell Inc.",
+    "version": "1.37.0",
+    "releaseDate": "2024-01-04",
+    "revision": "1.37",
+    "serial": "",
+    "language": "en",
+    "features": [
+      "PCI",
+      "PNP",
+      "Boot from CD",
+      "Selectable boot",
+      "EDD",
+      "Japanese floppy for NEC 9800 1.2 MB",
+      "Print screen service",
+      "ACPI",
+      "USB legacy",
+      "Smart battery",
+      "BIOS boot specification",
+      "Function key-initiated network boot",
+      "Targeted content distribution",
+      "UEFI"
+    ]
+  },
+  "baseboard": {
+    "manufacturer": "Dell Inc.",
+    "model": "00F6D3",
+    "version": "A00",
+    "serial": "/HB5V7H2/CN129637750E26/",
+    "assetTag": "Not Specified",
+    "memMax": 34359738368,
+    "memSlots": 2
+  },
+  "uuid": {
+    "os": "163582dcf4454c27a72a49bfbb959340",
+    "hardware": "4c4c4544-0042-3510-8056-c8c04f374832",
+    "macs": [
+      "a4:4c:c8:06:12:49"
+    ]
+  },
+  "memLayout": [
+    {
+      "size": 8589934592,
+      "bank": "BANK 0",
+      "type": "DDR4",
+      "ecc": false,
+      "clockSpeed": 2400,
+      "formFactor": "SODIMM",
+      "manufacturer": "80AD000080AD",
+      "partNum": "HMA81GS6AFR8N-UH",
+      "serialNum": "4205FD15",
+      "voltageConfigured": 1.2,
+      "voltageMin": 1.2,
+      "voltageMax": 1.2
+    },
+    {
+      "size": 8589934592,
+      "bank": "BANK 2",
+      "type": "DDR4",
+      "ecc": false,
+      "clockSpeed": 2400,
+      "formFactor": "SODIMM",
+      "manufacturer": "80AD000080AD",
+      "partNum": "HMA81GS6AFR8N-UH",
+      "serialNum": "41BD581F",
+      "voltageConfigured": 1.2,
+      "voltageMin": 1.2,
+      "voltageMax": 1.2
+    }
+  ],
+  "diskLayout": [
+    {
+      "device": "/dev/sda",
+      "type": "SSD",
+      "name": "SanDisk SD8SN8U-512G-1006",
+      "vendor": "SanDisk",
+      "size": 512110190592,
+      "bytesPerSector": null,
+      "totalCylinders": null,
+      "totalHeads": null,
+      "totalSectors": null,
+      "totalTracks": null,
+      "tracksPerCylinder": null,
+      "sectorsPerTrack": null,
+      "firmwareRevision": "0006",
+      "serialNum": "170616800450",
+      "interfaceType": "SATA",
+      "smartStatus": "unknown",
+      "temperature": null
+    }
+  ],
+  "wifiNetworks": [],
+  "fsSize": [
+    {
+      "fs": "/dev/sda4",
+      "type": "ext4",
+      "size": 492645728256,
+      "used": 164833083392,
+      "available": 302712410112,
+      "use": 35.25,
+      "mount": "/",
+      "rw": true
+    },
+    {
+      "fs": "efivarfs",
+      "type": "efivarfs",
+      "size": 393216,
+      "used": 206848,
+      "available": 182272,
+      "use": 53.16,
+      "mount": "/sys/firmware/efi/efivars",
+      "rw": false
+    },
+    {
+      "fs": "/dev/sda2",
+      "type": "ext4",
+      "size": 1976090624,
+      "used": 295022592,
+      "available": 1561899008,
+      "use": 15.89,
+      "mount": "/boot",
+      "rw": true
+    },
+    {
+      "fs": "/dev/sda1",
+      "type": "vfat",
+      "size": 196148224,
+      "used": 39468032,
+      "available": 156681216,
+      "use": 20.12,
+      "mount": "/boot/efi",
+      "rw": true
+    }
+  ],
+  "users": [
+    {
+      "user": "dipen",
+      "tty": "tty2",
+      "date": "2024-07-19",
+      "time": "10:58",
+      "ip": "tty2",
+      "command": "/usr/libexec/gnome-session-binary --session=ubuntu"
+    }
+  ],
+  "mem": {
+    "total": 16636514304,
+    "free": 2845126656,
+    "used": 13791387648,
+    "active": 8120807424,
+    "available": 8515706880,
+    "buffers": 1684611072,
+    "cached": 4556488704,
+    "slab": 1188630528,
+    "buffcache": 7429730304,
+    "swaptotal": 8192520192,
+    "swapused": 1768620032,
+    "swapfree": 6423900160,
+    "writeback": 0,
+    "dirty": 2764800
+  },
+  "battery": {
+    "hasBattery": true,
+    "cycleCount": 0,
+    "isCharging": false,
+    "designedCapacity": 60002,
+    "maxCapacity": 37742,
+    "currentCapacity": 37742,
+    "voltage": 8.264,
+    "capacityUnit": "mWh",
+    "percent": 100,
+    "timeRemaining": 274020,
+    "acConnected": true,
+    "type": "Li-poly",
+    "model": "DELL DW3WC64",
+    "manufacturer": "SMP",
+    "serial": "9001"
+  },
+  "networkStats": [
+    {
+      "iface": "enp0s31f6",
+      "operstate": "up",
+      "rx_bytes": 162242246,
+      "rx_dropped": 786,
+      "rx_errors": 0,
+      "tx_bytes": 32874697,
+      "tx_dropped": 0,
+      "tx_errors": 0,
+      "rx_sec": null,
+      "tx_sec": null,
+      "ms": 0
+    }
+  ]
+}

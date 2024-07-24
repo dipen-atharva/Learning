@@ -18,9 +18,14 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
     "@electron-forge/plugin-fuses": "^7.4.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "^31.1.0"
+    "electron": "^31.2.1"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "@electron/asar": "^3.2.10",
+    "axios": "^1.7.2",
+    "electron-squirrel-startup": "^1.0.1",
+    "express": "^4.19.2",
+    "sudo-prompt": "^9.2.1",
+    "systeminformation": "^5.22.11"
   }
 }
